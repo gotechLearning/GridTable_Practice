@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css display property</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            border: 3px solid black;
+            background-color: rgb(183, 219, 231);
+            border-radius: 5px;
+            margin: auto;
+            width: 1000px;
+        }
+        img{
+            margin: auto;
+            display: block;
+            width: 70px;
+        }
+        h3{
+            text-align: center;
+            margin: auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .box{
+            border: 2px solid black;
+            background-color: rgb(219, 168, 194);
+            margin: 4px 0px;
+            padding: 23px;
+            display: inline-block;
+            box-sizing: border-box;
+            width: 33%;
+            border-radius: 4px;
+        }
+        .container{
+            margin: auto;
+            width: 1000px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top">
+        <img src="data:image/png;base64,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"
+            alt="">
+        <h3>Welcome in Html</h3>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">Laptop</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, ducimus voluptatibus. Odio autem libero,
+                natus, ex tempora tempore ipsam nemo iste omnis distinctio quia inventore nobis eius modi iusto amet
+                blanditiis nam quisquam? Minus odit officia accusamus illum possimus quasi soluta commodi? Pariatur
+                velit repudiandae, quam est aut rem asperiores reiciendis autem reprehenderit, quaerat doloribus
+                doloremque, atque eligendi temporibus modi!</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Computer</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis distinctio ut quis, quisquam aperiam
+                expedita eligendi dolores similique laudantium quam amet sed atque assumenda error excepturi provident
+                molestias! Praesentium tenetur debitis nesciunt mollitia corrupti? Voluptas voluptates dolore incidunt
+                temporibus perspiciatis vitae quis culpa deserunt id. Mollitia, omnis inventore ducimus, quas rem
+                aperiam recusandae sunt eius ab totam corrupti esse porro!</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Palmtop</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolorem aliquam laboriosam ex rerum?
+                Itaque cum, ex autem voluptatem sapiente libero velit sit. Mollitia sint esse totam nulla alias! Illum
+                doloribus consequuntur voluptas delectus odio ducimus mollitia repellendus amet adipisci aperiam.
+                Assumenda odit in dolore error. Voluptate repellat rem, non officiis aperiam iure eligendi illo? Atque
+                velit repellat eius modi! Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Keyboard</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit labore nemo quaerat odit molestiae animi
+                repudiandae aperiam, at a expedita iste recusandae facilis delectus totam beatae fugiat perspiciatis
+                illum quas aut reiciendis. Quam, quidem modi. Sunt ea dignissimos magni, aperiam esse consectetur
+                aliquid minima nobis enim vero sint sapiente quaerat, molestias eveniet nisi praesentium nesciunt est
+                iste reprehenderit obcaecati dolore? Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Mouse</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores laudantium ducimus iste voluptatibus
+                dolorem, voluptate nemo? Velit praesentium autem possimus nulla, obcaecati quos cupiditate consequuntur
+                ex harum laborum culpa deleniti labore numquam laudantium iure omnis cumque fuga quia magnam ab atque
+                distinctio. Iure minus ad, rerum unde quia ullam totam provident recusandae minima molestiae facere enim
+                doloremque nobis repellat voluptates.</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Scanner</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis velit voluptatem eaque fugit labore
+                minima eius ipsa obcaecati exercitationem dolorem officia impedit ad assumenda, animi, suscipit et
+                nesciunt! Necessitatibus repellendus soluta tenetur perferendis sunt. Tempore provident vero magnam
+                ullam doloribus sequi enim illo, ipsum atque quasi aliquam cumque quibusdam quaerat dignissimos quis
+                nostrum possimus nihil! Sint similique porro et iusto!</p>
+        </div>
+    </div>
+</body>
+
+</html>
